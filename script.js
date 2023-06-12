@@ -10,5 +10,9 @@ function getComputerChoice(){
       }
     
 }
-var computerChoice = getComputerChoice();   
+function playRound(playerChoice, computerChoice){
+
+}
+const playerInput = prompt("Rock, paper or scissors?")
+var computerInput = getComputerChoice();   
 console.log(computerChoice);
