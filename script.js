@@ -31,9 +31,22 @@ function playRound(playerSelection, computerSelection){
     }
 
 }
-function Game(playerSelection, computerSelection){
-  
+function Game(){
+  i=0
+  while(i<5){
+    const playerInput = prompt("Rock, paper or scissors?").toLowerCase();
+    const computerInput = getComputerChoice();
+    playRound(playerInput, computerSInput);
+  }
+  if(playerScore > cpuScore){
+    console.log("Congratulations, you won!");
+  }
+  else if(cpuScore > playerScore){
+    console.log("Better luck next time :(");
+  }
+
+  else {
+    console.log("It's a tie!");
+  }
 }
-const playerInput = prompt("Rock, paper or scissors?").toLowerCase();
-const computerInput = getComputerChoice();
-playRound(playerInput, computerInput)
+Game()
