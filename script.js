@@ -20,13 +20,13 @@ function playRound(playerSelection, computerSelection){
         playerScore += 1
     }
     else if (playerSelection == computerSelection) {
-      console.log('It\'s a tie. You both chose ' + playerSelection
+      console.log("It\'s a tie. You both chose " + playerSelection
       + " Player score: " + playerScore + " Computer score: " + cpuScore)
     }
     else {
         cpuScore += 1
-        console.log('You lose! ' + computerSelection + ' beats ' + playerSelection
-            + " Player score: " + playerScore + "<Computer score: " + cpuScore)
+        console.log('You lose! ' + " The computer chose " + computerSelection + " which beats " + playerSelection
+            + " Player score: " + playerScore + " Computer score: " + cpuScore)
 
     }
 
@@ -36,7 +36,8 @@ function Game(){
   while(i<5){
     const playerInput = prompt("Rock, paper or scissors?").toLowerCase();
     const computerInput = getComputerChoice();
-    playRound(playerInput, computerSInput);
+    playRound(playerInput, computerInput);
+    i++;
   }
   if(playerScore > cpuScore){
     console.log("Congratulations, you won!");
